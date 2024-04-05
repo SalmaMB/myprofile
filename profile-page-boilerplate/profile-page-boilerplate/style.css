@@ -1,0 +1,77 @@
+/* Write some CSS below */
+body {
+    background-color: #F7F9FC;
+    color: black;
+    font-size: 18px;
+    font-family: "Lora", serif;
+    text-align: center;
+
+    background-image: url("images/travel\ 3.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 24px;
+    color: Gold;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: black; 
+    border: 2px solid gold; 
+    border-radius: 5px; 
+    padding: 15px 15px;
+    font-family: "Arial", sans-serif;     font-weight: bold; 
+    font-size: 16px; 
+}
+div {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.1);
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 5px;
+    width: 600px;
+}
+img {
+    border-radius: 50%; 
+    height: 250px;
+    object-fit: cover;
+}
+
+a:hover {
+    background-color: grey;
+    color: white; 
+}
+@keyframes fly {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .airplane {
+    position: fixed;
+    top: 100px; 
+    left: -100px; 
+    animation: fly 10s linear infinite; 
+    background-color: transparent;
+  }
+  
+  
+  .airplane:before {
+    content: "\2708"; 
+    font-size: 50px;
+    position: absolute;
+    color: gold; 
+    background-color: transparent;
+  }
